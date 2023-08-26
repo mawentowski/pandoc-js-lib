@@ -1,0 +1,4 @@
+input:
+  - ../../source-files/hello-world.md
+utilities:
+  - ./uppercaseFilter.js

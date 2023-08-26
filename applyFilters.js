@@ -11,6 +11,10 @@ async function applyFilters(inputJSON, filterPaths) {
 
       // Apply the filter to the JSON data
       transformedJSON = await filter(transformedJSON);
+      console.log(
+        "Transformed JSON:",
+        JSON.stringify(transformedJSON, null, 2)
+      );
     } catch (error) {
       console.error(`Error applying filter: ${filterPath}`);
       console.error(error);

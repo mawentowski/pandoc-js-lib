@@ -11,6 +11,7 @@ async function convertToFormat(jsonData, outputFormat) {
       console.log("Starting Pandoc conversion...");
 
       const jsonInput = JSON.stringify(jsonData);
+      // console.log(jsonInput);
       const { stdout } = await exec(
         `echo '${jsonInput}' | pandoc -f json -t ${outputFormat}`,
         {

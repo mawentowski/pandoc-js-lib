@@ -18,11 +18,18 @@ config.input.forEach(async (inputFile) => {
     // Apply filters
     const filteredJSON = await applyFilters(jsonContent, config.utilities);
 
-    // Write the filtered JSON to a file
-    const outputFile = inputFile.replace(".md", ".json");
-    fs.writeFileSync(outputFile, JSON.stringify(filteredJSON, null, 2));
+    // Load the expected output JSON
+    const expectedOutputFile = inputFile.replace(".md", ".json");
+    const expectedOutput = JSON.parse(
+      fs.readFileSync(expectedOutputFile, "utf-8")
+    );
 
-    console.log(`Processed ${inputFile} and saved the filtered JSON.`);
+    // Compare the filtered JSON with the expected output
+    if (JSON.stringify(filteredJSON) === JSON.stringify(expectedOutput)) {
+      console.log(`Test passed for ${inputFile}.`);
+    } else {
+      console.log(`Test failed for ${inputFile}.`);
+    }
   } else {
     console.log(`Error processing ${inputFile}.`);
   }

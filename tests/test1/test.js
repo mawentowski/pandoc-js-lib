@@ -1,7 +1,7 @@
 const fs = require("fs-extra");
 const path = require("path");
 const { convertMarkdownToJson } = require("../../convertMarkdowntoJson");
-const applyFilters = require("./applyFilters");
+const applyFilters = require("../../applyFilters");
 const yaml = require("js-yaml");
 
 // Load config.yaml

@@ -5,3 +5,4 @@ utilities:
   - ./filters/uppercaseFilter.js
 
 outputFormat: html
+outputDirectory: output

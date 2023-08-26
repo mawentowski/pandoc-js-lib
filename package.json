@@ -1,0 +1,18 @@
+{
+  "name": "pandoc",
+  "version": "1.0.0",
+  "description": "uppercaseUtility.js would typically be considered a utility, not a filter. It's responsible for applying the uppercase transformation to the JSON representation of the Markdown content, but it doesn't modify the document's structure or content in the way that a filter does. It's more about processing and formatting the content, which aligns better with the concept of a utility.",
+  "main": "main-test.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "js-yaml": "^4.1.0"
+  }
+}

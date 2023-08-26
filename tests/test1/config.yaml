@@ -1,7 +1,0 @@
-input:
-  # relative to test.js
-  - ../../source-files/hello-world.md
-
-utilities:
-  # relative to root
-  - ./filters/uppercaseFilter.js

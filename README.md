@@ -92,3 +92,15 @@ JSON-formatted AST
 ↓
 target format
 ```
+
+## Main.js
+
+Yes, that's correct. The main.js script is responsible for a preliminary conversion step, where it takes Markdown files from a specified directory, converts them to JSON format, and writes the JSON content to separate files. This can be considered as a setup or initialization step before running individual tests with filters.
+
+`node main.js`
+
+## Test.js
+
+Once the Markdown files are converted to JSON and stored in separate files, you can then proceed to create individual test scripts (like the test.js script you've been working on) that read these JSON files, apply filters, and compare the output with expected results. This separation allows you to establish a clear testing process: first, converting Markdown to JSON, and then applying filters and validating the output against expected results.
+
+`node tests/uppercase-filter-test/test.js`

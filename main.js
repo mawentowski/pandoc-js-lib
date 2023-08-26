@@ -3,7 +3,7 @@ const path = require("path");
 const { convertMarkdownToJson } = require("./utils/convertMarkdowntoJson.js");
 
 // Directory where Markdown and JSON files are located
-const filesDirectory = path.join(__dirname, "files");
+const filesDirectory = path.join(__dirname, "source-files");
 
 // Read Markdown files in the directory
 fs.readdir(filesDirectory, (err, files) => {

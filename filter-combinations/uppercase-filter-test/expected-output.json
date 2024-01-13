@@ -27,42 +27,42 @@
       "c": [
         {
           "t": "Str",
-          "c": "This"
+          "c": "THIS"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "is"
+          "c": "IS"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "a"
+          "c": "A"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "sample"
+          "c": "SAMPLE"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "Markdown"
+          "c": "MARKDOWN"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "document."
+          "c": "DOCUMENT."
         }
       ]
     }

@@ -1,0 +1,8 @@
+input:
+  - ./source-files/hello-world.md
+
+utilities:sch
+  - ./filter-validation/uppercaseFilter.js
+
+outputFormat: html
+outputDirectory: output

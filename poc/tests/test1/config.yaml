@@ -1,4 +1,0 @@
-input:
-  - ../../files/hello-world.md
-utilities:
-  - ../../utils/uppercaseUtility.js

@@ -4,9 +4,12 @@ async function uppercaseFilter(inputJSON) {
     blocks: inputJSON.blocks.map((block) => ({
       ...block,
       c: block.c.map((content) => {
-        if (typeof content === "string") {
-          console.log("Transforming:", content);
-          return content.toUpperCase();
+        if (content.t === "Str") {
+          console.log("Transforming:", content.c);
+          return {
+            t: "Str",
+            c: content.c.toUpperCase(),
+          };
         } else {
           return content;
         }

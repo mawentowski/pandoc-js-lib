@@ -12,7 +12,9 @@ const config = yaml.load(configContent);
 
 // Specify the output format (e.g., "html" or "pdf") in the config.yaml
 const outputFormat = config.outputFormat; // Get the output format from config
-
+// Loop through input files from config.yaml and process them
+// Loop through input files from config.yaml and process them
+// Loop through input files from config.yaml and process them
 // Loop through input files from config.yaml and process them
 config.input.forEach(async (inputFile) => {
   const inputFileWithoutExtension = path.basename(inputFile, ".md");
@@ -32,27 +34,22 @@ config.input.forEach(async (inputFile) => {
     // Compare the filtered JSON with the expected output
     if (JSON.stringify(filteredJSON) === JSON.stringify(expectedOutput)) {
       console.log(`Test passed for ${inputFile}.`);
-
-      // Convert JSON-formatted AST to the desired output format
-      const convertedContent = await convertToFormat(
-        filteredJSON,
-        outputFormat
-      );
-
-      // Specify your output directory
-      const outputDirectory = path.join(__dirname, "output");
-
-      // Save the converted content to a file
-      const outputFile = path.join(
-        outputDirectory,
-        `${inputFileWithoutExtension}.${outputFormat}`
-      );
-      fs.writeFileSync(outputFile, convertedContent);
-
-      console.log(`Converted content saved to ${outputFile}`);
     } else {
       console.log(`Test failed for ${inputFile}.`);
     }
+
+    // Convert JSON-formatted AST to the desired output format
+    const convertedContent = await convertToFormat(filteredJSON, outputFormat);
+
+    // Save the converted content to a file
+    const outputDirectory = path.join(__dirname, "output");
+    const outputFile = path.join(
+      outputDirectory,
+      `${inputFileWithoutExtension}.${outputFormat}`
+    );
+    fs.writeFileSync(outputFile, convertedContent);
+
+    console.log(`Converted content saved to ${outputFile}`);
   } else {
     console.log(`Error processing ${inputFile}.`);
   }

@@ -1,0 +1,15 @@
+Hi Chief!
+
+I've been learning a lot of new stuff from discussions relating to your work on the infra, diagram-as-code, and YAML-based docs lately. You may have noticed that I don't bring major ideas/suggestions to the table in that regard. That's because I'm not super familiar with some of the concepts discussed. So when I see such conversations crusing straight down the middle of the road, I decide it's best to stand back and learn rather than get it the way. Of course that doesn't mean I won't research the subject matter and contribute when I can.
+
+I hope you understand.
+
+
+
+
+
+
+
+
+
+

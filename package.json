@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node tests/uppercase-filter-test/test.js",
+    "test": "node filter-combinations/uppercase-filter-test/test.js",
     "main": "node main.js"
   },
   "author": "",

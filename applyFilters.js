@@ -1,7 +1,7 @@
 // applyFilters.js
 
 // Load your filter modules here (import statements)
-const uppercaseFilter = require("./filters/uppercaseFilter");
+const uppercaseFilter = require("./filter-validation/uppercaseFilter");
 async function applyFilters(inputJSON, filterPaths) {
   let transformedJSON = { ...inputJSON }; // Create a copy to modify
 

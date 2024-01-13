@@ -111,3 +111,15 @@ Add validation of HTML as well.
 https://pandoc.org/filters.html
 
 Writing filter guides
+
+## Issue test fails even though the JSON files match
+
+## filter-combinations
+
+In this structure, the "filter-combinations" directory is where you define and test different combinations of filters. The "filters" directory is where you can organize built-in and user-defined filters for individual testing and use within combinations.
+
+For the folder that includes tests and the ability to combine filters, define output, test, and generate output:
+
+## filter-validation
+
+For the folder that is specifically about validating individual filters and their behavior:

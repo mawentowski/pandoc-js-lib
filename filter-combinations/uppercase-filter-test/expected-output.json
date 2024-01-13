@@ -10,14 +10,14 @@
         [
           {
             "t": "Str",
-            "c": "HELLO,"
+            "c": "Hello,"
           },
           {
             "t": "Space"
           },
           {
             "t": "Str",
-            "c": "WORLD!"
+            "c": "World!"
           }
         ]
       ]
